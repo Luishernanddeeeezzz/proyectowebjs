@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Programas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Gestión de Programas Académicos</h1>
+    <form id="formPrograma">
+        <input type="text" id="codigoPrograma" placeholder="Código del programa" required><br>
+        <input type="text" id="nombrePrograma" placeholder="Nombre del programa" required><br>
+        <input type="number" id="duracion" placeholder="Duración en semestres" required><br>
+        <select id="modalidad">
+            <option value="">Seleccione modalidad</option>
+            <option>Presencial</option>
+            <option>Virtual</option>
+        </select><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <button onclick="window.location.href='index.html'">Volver al menú principal</button>
+    <h2>Programas guardados</h2>
+    <pre id="listaProgramas"></pre>
+    <script src="js/programas.js"></script>
+</body>
+</html>

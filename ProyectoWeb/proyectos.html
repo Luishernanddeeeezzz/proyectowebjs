@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Proyectos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Gestión de Proyectos de Grado</h1>
+    <form id="formProyecto">
+        <input type="text" id="codigo" placeholder="Código del proyecto" required><br>
+        <input type="text" id="titulo" placeholder="Título del proyecto" required><br>
+        <select id="area">
+            <option value="">Seleccione área</option>
+            <option>Tecnología</option>
+            <option>Salud</option>
+            <option>Educación</option>
+            <option>Medio Ambiente</option>
+            <option>Negocios</option>
+        </select><br>
+        <select id="estado">
+            <option value="">Seleccione estado</option>
+            <option>En Desarrollo</option>
+            <option>En Revisión</option>
+            <option>Finalizado</option>
+            <option>Cancelado</option>
+        </select><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <button onclick="window.location.href='index.html'">Volver al menú principal</button>
+    <h2>Proyectos guardados</h2>
+    <pre id="listaProyectos"></pre>
+    <script src="js/proyectos.js"></script>
+</body>
+</html>
